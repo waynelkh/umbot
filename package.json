@@ -1,0 +1,28 @@
+{
+  "name": "umbot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "koa": "^1.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/waynelkh/umbot.git"
+  },
+  "keywords": [],
+  "author": "wnlee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/waynelkh/umbot/issues"
+  },
+  "homepage": "https://github.com/waynelkh/umbot#readme"
+}
