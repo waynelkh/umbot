@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "koa": "^1.2.0"
+    "koa": "^1.2.0",
+    "koa-body": "^1.4.0",
+    "koa-router": "^5.4.0",
+    "koa-sslify": "^1.0.1",
+    "request": "^2.72.0"
   },
   "devDependencies": {
     "nodemon": "^1.9.2"

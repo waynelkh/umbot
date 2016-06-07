@@ -1,3 +1,4 @@
+*.pem
 ### Node ###
 # Logs
 logs
