@@ -2,6 +2,7 @@ var koa = require('koa');
 var http = require('http');
 var https = require('https');
 var fs = require('fs');
+var logger = require('koa-logger');
 var router = require('koa-router')();
 var koaBody = require('koa-body')();
 var enforceHttps = require('koa-sslify');
@@ -10,13 +11,7 @@ var validation_token = 'wnlee';
 var page_token = "EAAZAfRyoecJwBADHToMPClFNZAgYvMtZA2QhjazXliMKuGyxEHOxeRW9wruXAdMzTIb38mfZCEIdpiba9XLhZApzZBlIPXrB3mSZAYlAyhyZC5DJH3s1yvAVlLeSeMOlSaWjX26VNLoLcgkCDwS0YfSQBQrfiNqLyIiCXcLaTKxkjAZDZD";
 
 var app = koa();
-// logger
-app.use(function *(next){
-  var start = new Date;
-  yield next;
-  var ms = new Date - start;
-  console.log('%s %s - %s', this.method, this.url, ms);
-});
+app.use(logger());
 app.use(enforceHttps());
 app
   .use(router.routes())
